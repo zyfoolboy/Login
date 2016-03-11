@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7M7-Oj-hC1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Wif-v7-CCn">
+            <objects>
+                <viewController id="7M7-Oj-hC1" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aVa-LP-VZE"/>
+                        <viewControllerLayoutGuide type="bottom" id="x7m-Kk-y9w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rvA-az-fan">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYy-eG-hRY">
+                                <rect key="frame" x="30" y="70" width="540" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ah0-Sl-kbO">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="I1g-NC-BH2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-mt-PaV">
+                                        <rect key="frame" x="0.0" y="40" width="540" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="URn-o1-9to"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6cX-mt-PaV" firstAttribute="leading" secondItem="tYy-eG-hRY" secondAttribute="leading" id="d0u-rh-IwO"/>
+                                    <constraint firstItem="Ah0-Sl-kbO" firstAttribute="leading" secondItem="tYy-eG-hRY" secondAttribute="leading" id="fKl-Q5-jGO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ah0-Sl-kbO" secondAttribute="trailing" id="iRU-6T-TNu"/>
+                                    <constraint firstAttribute="bottom" secondItem="6cX-mt-PaV" secondAttribute="bottom" id="mjC-KM-bP2"/>
+                                    <constraint firstItem="Ah0-Sl-kbO" firstAttribute="top" secondItem="tYy-eG-hRY" secondAttribute="top" id="nRO-uI-rR6"/>
+                                    <constraint firstAttribute="trailing" secondItem="6cX-mt-PaV" secondAttribute="trailing" id="oUd-9V-Rax"/>
+                                    <constraint firstAttribute="height" constant="80" id="r9p-7j-dSm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tYy-eG-hRY" firstAttribute="top" secondItem="aVa-LP-VZE" secondAttribute="bottom" constant="50" id="M0F-hl-5eb"/>
+                            <constraint firstAttribute="trailing" secondItem="tYy-eG-hRY" secondAttribute="trailing" constant="30" id="bIP-XR-1Sm"/>
+                            <constraint firstItem="tYy-eG-hRY" firstAttribute="leading" secondItem="rvA-az-fan" secondAttribute="leading" constant="30" id="qFK-pd-t6w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="belowTextField" destination="6cX-mt-PaV" id="Tt2-cr-MHT"/>
+                        <outlet property="inputView" destination="tYy-eG-hRY" id="2mS-wI-Vwq"/>
+                        <outlet property="topTextField" destination="Ah0-Sl-kbO" id="aqJ-2e-crn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fU-xJ-ckN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="426"/>
+        </scene>
+    </scenes>
+</document>
