@@ -27,6 +27,7 @@
 		E74050A71C92BEDF0005A142 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E74050991C92BEDF0005A142 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		E74050A81C92BEDF0005A142 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E740509B1C92BEDF0005A142 /* View+MASAdditions.m */; };
 		E74050A91C92BEDF0005A142 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E740509E1C92BEDF0005A142 /* ViewController+MASAdditions.m */; };
+		E74050D51C92DDA10005A142 /* UITextField+SetLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = E74050D41C92DDA10005A142 /* UITextField+SetLeftView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		E740509C1C92BEDF0005A142 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		E740509D1C92BEDF0005A142 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		E740509E1C92BEDF0005A142 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E74050D31C92DDA10005A142 /* UITextField+SetLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SetLeftView.h"; sourceTree = "<group>"; };
+		E74050D41C92DDA10005A142 /* UITextField+SetLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SetLeftView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				E740507F1C92BD6B0005A142 /* LoginViewController.m */,
 				E74050811C92BDDD0005A142 /* UIView+SetRound.h */,
 				E74050821C92BDDD0005A142 /* UIView+SetRound.m */,
+				E74050D31C92DDA10005A142 /* UITextField+SetLeftView.h */,
+				E74050D41C92DDA10005A142 /* UITextField+SetLeftView.m */,
 				E74050541C92BD250005A142 /* Main.storyboard */,
 				E74050571C92BD250005A142 /* Assets.xcassets */,
 				E74050591C92BD250005A142 /* LaunchScreen.storyboard */,
@@ -352,6 +357,7 @@
 			files = (
 				E74050A21C92BEDF0005A142 /* MASConstraintMaker.m in Sources */,
 				E74050831C92BDDD0005A142 /* UIView+SetRound.m in Sources */,
+				E74050D51C92DDA10005A142 /* UITextField+SetLeftView.m in Sources */,
 				E74050501C92BD250005A142 /* AppDelegate.m in Sources */,
 				E74050A11C92BEDF0005A142 /* MASConstraint.m in Sources */,
 				E74050A91C92BEDF0005A142 /* ViewController+MASAdditions.m in Sources */,
