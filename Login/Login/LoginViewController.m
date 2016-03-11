@@ -33,6 +33,7 @@
     //imageView.frame = CGRectMake(0, 0, 25, 25);
     [self.topTextField setLeftView:topLeftView];
     [self.topTextField setLeftViewMode:UITextFieldViewModeAlways];
+    self.topTextField.placeholder = @"请输入用户名";
     [topLeftView addSubview:imageView];
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -45,6 +46,7 @@
     lowLeftView.frame = CGRectMake(0, 0, 33, 33);
     UIImageView *lowImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"u12"]];
     self.belowTextField.leftView = lowLeftView;
+    self.belowTextField.placeholder = @"请输入密码";
     [self.belowTextField setLeftViewMode:UITextFieldViewModeAlways];
     [lowLeftView addSubview:lowImageView];
     [lowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
