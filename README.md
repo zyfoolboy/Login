@@ -4,6 +4,7 @@
 设置圆角使用self.layer.cornerRadius<br/>
 当该视图有子视图时并且子视图遮挡住俯视图被设置为圆角的部分时需要加一句self.layer.masksToBounds = YES,因为子视图会覆盖俯视图所以就看不到圆角效果了<br/>
 该句话决定子layer是否被当前layer的边界剪切。<br/>
-
-![没有使用self.layer.masksToBounds=YES](https://github.com/zyfoolboy/Login/blob/master/Login/Login/Assets.xcassets/one.imageset/one.png)
+没有使用self.layer.masksToBounds=YES 蓝色视图遮盖住红色视图的左上角所以显示的不是圆角<br/>
+![没有使用self.layer.masksToBounds=YES](https://github.com/zyfoolboy/Login/blob/master/Login/Login/Assets.xcassets/one.imageset/one.png)<br/>
+使用self.layer.masksToBounds=YES，设置圆角效果也可以作用于子视图<br/>
 ![使用self.layer.masksToBounds=YES](https://github.com/zyfoolboy/Login/blob/master/Login/Login/Assets.xcassets/two.imageset/two.png)
