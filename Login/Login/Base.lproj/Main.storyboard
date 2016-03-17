@@ -48,9 +48,29 @@
                                     <constraint firstAttribute="height" constant="80" id="r9p-7j-dSm"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eak-Og-fX9">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjJ-j8-OOb">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.19235095990000001" blue="0.20101835779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pjJ-j8-OOb" firstAttribute="top" secondItem="Eak-Og-fX9" secondAttribute="top" id="Lcl-VA-NRM"/>
+                                    <constraint firstAttribute="trailing" secondItem="pjJ-j8-OOb" secondAttribute="trailing" constant="20" id="N3x-QM-cYG"/>
+                                    <constraint firstAttribute="height" constant="100" id="YOq-Sg-fIE"/>
+                                    <constraint firstAttribute="bottom" secondItem="pjJ-j8-OOb" secondAttribute="bottom" constant="20" id="r0O-RU-oaw"/>
+                                    <constraint firstItem="pjJ-j8-OOb" firstAttribute="leading" secondItem="Eak-Og-fX9" secondAttribute="leading" id="xz6-4I-sbc"/>
+                                    <constraint firstAttribute="width" constant="100" id="yPC-WR-70E"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Eak-Og-fX9" firstAttribute="centerY" secondItem="rvA-az-fan" secondAttribute="centerY" id="4L9-3g-yRZ"/>
+                            <constraint firstItem="Eak-Og-fX9" firstAttribute="centerX" secondItem="rvA-az-fan" secondAttribute="centerX" id="9Xl-hy-50u"/>
                             <constraint firstItem="tYy-eG-hRY" firstAttribute="top" secondItem="aVa-LP-VZE" secondAttribute="bottom" constant="50" id="M0F-hl-5eb"/>
                             <constraint firstAttribute="trailing" secondItem="tYy-eG-hRY" secondAttribute="trailing" constant="30" id="bIP-XR-1Sm"/>
                             <constraint firstItem="tYy-eG-hRY" firstAttribute="leading" secondItem="rvA-az-fan" secondAttribute="leading" constant="30" id="qFK-pd-t6w"/>
@@ -58,7 +78,9 @@
                     </view>
                     <connections>
                         <outlet property="belowTextField" destination="6cX-mt-PaV" id="Tt2-cr-MHT"/>
+                        <outlet property="fatherView" destination="Eak-Og-fX9" id="hyr-yo-H2Q"/>
                         <outlet property="inputView" destination="tYy-eG-hRY" id="2mS-wI-Vwq"/>
+                        <outlet property="sonView" destination="pjJ-j8-OOb" id="3s0-V2-n9h"/>
                         <outlet property="topTextField" destination="Ah0-Sl-kbO" id="aqJ-2e-crn"/>
                     </connections>
                 </viewController>

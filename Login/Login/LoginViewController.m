@@ -16,8 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIView *inputView;
 @property (weak, nonatomic) IBOutlet UITextField *topTextField;
 @property (weak, nonatomic) IBOutlet UITextField *belowTextField;
-
-
+@property (weak, nonatomic) IBOutlet UIView *fatherView;
+@property (weak, nonatomic) IBOutlet UIView *sonView;
 
 @end
 
@@ -30,6 +30,7 @@
     
     [self.topTextField setLeftViewOfTextField:@"u9" andPlaceholder:@"请输入用户名"];
     [self.belowTextField setLeftViewOfTextField:@"u12" andPlaceholder:@"请输入密码"];
+    [self.fatherView setRound];
 //    UIView *topLeftView = [[UIView alloc] init];
 //    topLeftView.frame = CGRectMake(0, 0, 33, 33);
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"u9"]];

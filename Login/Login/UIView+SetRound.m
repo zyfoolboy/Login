@@ -12,6 +12,7 @@
 
 - (void)setRound {
      self.layer.cornerRadius = 4;
+    self.layer.masksToBounds = YES;
 }
 
 @end
