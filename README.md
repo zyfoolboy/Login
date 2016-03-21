@@ -6,5 +6,5 @@
 该句话决定子layer是否被当前layer的边界剪切。<br/>
 没有使用self.layer.masksToBounds=YES 蓝色视图遮盖住红色视图的左上角所以显示的不是圆角<br/>
 ![没有使用self.layer.masksToBounds=YES](https://github.com/zyfoolboy/Login/blob/master/Login/Login/Assets.xcassets/one.imageset/one.png)<br/>
-使用self.layer.masksToBounds=YES，设置圆角效果也可以作用于子视图<br/>
+使用self.layer.masksToBounds=YES，设置圆角效果也可以作用于子视图,但是这样的话会造成离屏渲染,如果一个界面需要用到大量的圆角尽量不用这个方法<br/>
 ![使用self.layer.masksToBounds=YES](https://github.com/zyfoolboy/Login/blob/master/Login/Login/Assets.xcassets/two.imageset/two.png)
